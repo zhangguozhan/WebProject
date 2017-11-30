@@ -18,6 +18,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
+	<script type="text/javascript">
+	var  href = window.location.href;
+	href = href.substring(href.indexOf("//"), href.lastIndexOf("/")) ;
+	alert(href);
+	</script>
   </head>
   
   <body>
