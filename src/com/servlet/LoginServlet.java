@@ -31,6 +31,8 @@ public class LoginServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
+		String param = request.getParameter("param");
+		System.out.println(param);
 		String repeat = getInitParameter("repeat");
 		System.out.println(repeat+"===");
 		response.setContentType("text/html");
